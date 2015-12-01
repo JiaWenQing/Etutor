@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <net.dx.etutor.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imv_agency_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:background="@drawable/icon_home_agency" />
+
+            <TextView
+                android:id="@+id/tv_agency_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:drawableLeft="@drawable/line_v_1"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableRight="@drawable/selector_button_correction"
+                android:gravity="center"
+                android:text="@string/text_agency_name"
+                android:textColor="@color/text_need_title"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10" >
+
+                <TextView
+                    android:id="@+id/tv_agency_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/selector_location"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:gravity="center"
+                    android:maxLength="13"
+                    android:maxWidth="@dimen/height_200"
+                    android:singleLine="true"
+                    android:text="@string/text_address1"
+                    android:textColor="@color/text_need_title"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_agency_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/selector_phone"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:maxWidth="@dimen/height_132"
+                    android:singleLine="true"
+                    android:textColor="@color/text_need_title"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_agency_web_site"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tv_agency_location"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:autoLink="web"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/selector_icon_web"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:maxWidth="@dimen/height_200"
+                    android:singleLine="true"
+                    android:textColor="@color/text_need_title"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_agency_classity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tv_agency_web_site"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:drawableLeft="@drawable/agency_classity"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_need_title"
+                    android:textSize="@dimen/text_size_14"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/split_0.5"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:src="@drawable/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:drawableLeft="@drawable/line_v_2"
+                android:drawablePadding="@dimen/margin_10"
+                android:gravity="center"
+                android:text="@string/text_agency_feature"
+                android:textColor="@color/text_need_title"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_agency_feature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_weight="2"
+                android:lineSpacingExtra="3dp"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="@color/text_need_title"
+                android:textSize="@dimen/text_size_14"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/split_0.5"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:drawableLeft="@drawable/line_v_3"
+                android:drawablePadding="@dimen/margin_10"
+                android:gravity="center"
+                android:text="@string/text_agency_intro"
+                android:textColor="@color/text_need_title"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_agency_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_weight="2"
+                android:lineSpacingExtra="3dp"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="@color/text_need_title"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:drawableLeft="@drawable/line_v_1"
+                android:drawablePadding="@dimen/margin_10"
+                android:gravity="center"
+                android:text="@string/text_school_scope"
+                android:textColor="@color/text_need_title"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_agency_region"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_weight="2"
+                android:lineSpacingExtra="3dp"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="@color/text_need_title"
+                android:textSize="@dimen/text_size_14"
+                android:visibility="gone" />
+        </LinearLayout>
+    </net.dx.etutor.view.MyScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <include layout="@layout/main_head_bar" />
+    </LinearLayout>
+
+</RelativeLayout>

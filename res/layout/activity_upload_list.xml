@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head_bar" />
+    <include 
+        android:id="@+id/layout_finish_network"
+        layout="@layout/item_check_network"
+        android:visibility="gone" />
+
+    <net.dx.etutor.view.listview.PullToRefreshView
+        android:id="@+id/main_pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_my_upload_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-1dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/line"
+            android:dividerHeight="@dimen/split_0.5"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:visibility="visible" >
+        </ListView>
+    </net.dx.etutor.view.listview.PullToRefreshView>
+
+
+</LinearLayout>

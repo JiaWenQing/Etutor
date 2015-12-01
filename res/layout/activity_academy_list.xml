@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_academy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:background="@color/text_white" >
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            layout="@layout/main_head_bar"
+            android:visibility="visible" />
+
+        <RadioGroup
+            android:id="@+id/rg_choose_title"
+            android:layout_width="@dimen/width_180"
+            android:layout_height="@dimen/height_35"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_3"
+            android:layout_marginTop="@dimen/margin_3"
+            android:background="@color/text_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <RadioButton
+                android:id="@+id/rb_title_school"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_academy_title_school"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/text_school_list"
+                android:textColor="@drawable/selector_academy_textcolor"
+                android:textSize="@dimen/text_size_18" />
+
+            <RadioButton
+                android:id="@+id/rb_title_agency"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_academy_title_agency"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/text_agency_list"
+                android:textColor="@drawable/selector_academy_textcolor"
+                android:textSize="@dimen/text_size_18" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</RelativeLayout>

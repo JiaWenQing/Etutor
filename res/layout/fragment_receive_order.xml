@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+    <include
+        layout="@layout/main_fragment_head_bar"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/rg_order_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_order_status_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/search_teacher_filter_line"
+            android:gravity="center"
+            android:text="@string/text_order_status_1"
+            android:textColor="@drawable/selector_textcolor_orange_gray" />
+
+        <TextView
+            android:id="@+id/tv_order_status_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/search_teacher_filter_line"
+            android:gravity="center"
+            android:text="@string/text_order_status_2"
+            android:textColor="@drawable/selector_textcolor_orange_gray" />
+        <TextView
+            android:id="@+id/tv_order_status_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/search_teacher_filter_line"
+            android:gravity="center"
+            android:text="@string/text_order_status_3"
+            android:textColor="@drawable/selector_textcolor_orange_gray" />
+        <TextView
+            android:id="@+id/tv_order_status_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/search_teacher_filter_line"
+            android:gravity="center"
+            android:text="@string/text_order_status_4"
+            android:textColor="@drawable/selector_textcolor_orange_gray" />
+
+        <TextView
+            android:id="@+id/tv_order_status_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/text_order_status_5"
+            android:textColor="@drawable/selector_textcolor_orange_gray" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+    <ListView
+        android:id="@+id/lv_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/line"
+        android:dividerHeight="@dimen/split_0.5"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="visible" >
+    </ListView>
+    <TextView
+        android:id="@+id/tv_not_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/text_no_order"
+        android:textSize="@dimen/text_size_18"
+        android:visibility="gone" />
+
+</LinearLayout>

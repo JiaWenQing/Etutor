@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_posts_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_poster_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10" >
+
+        <net.dx.etutor.view.imageview.RoundHeadImageView
+            android:id="@+id/imv_poster_avatar"
+            android:layout_width="@dimen/height_80"
+            android:layout_height="@dimen/height_80"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/margin_10"
+            android:clickable="true"
+            android:padding="@dimen/padding_5"
+            android:scaleType="fitXY"
+            android:src="@drawable/avatar" />
+
+        <TextView
+            android:id="@+id/tv_poster_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_toRightOf="@+id/imv_poster_avatar"
+            android:text="@string/app_name"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_18" />
+
+        <RatingBar
+            android:id="@+id/ratingbar_teacher"
+            style="@style/MyRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_poster_name"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_toRightOf="@+id/imv_poster_avatar"
+            android:clickable="false"
+            android:numStars="5"
+            android:rating="3" />
+
+        <TextView
+            android:id="@+id/tv_identify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_poster_name"
+            android:layout_alignBottom="@+id/tv_poster_name"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_toRightOf="@+id/tv_poster_name"
+            android:drawableLeft="@drawable/icon_identify"
+            android:drawablePadding="@dimen/margin_5"
+            android:gravity="center"
+            android:textColor="@color/text_gray" />
+
+        <TextView
+            android:id="@+id/tv_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_identify"
+            android:layout_alignBottom="@+id/tv_identify"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_toRightOf="@+id/tv_identify"
+            android:drawableLeft="@drawable/icon_verify"
+            android:drawablePadding="@dimen/margin_5"
+            android:gravity="center"
+            android:textColor="@color/text_gray" />
+
+        <TextView
+            android:id="@+id/tv_posts_pv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingbar_teacher"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_toLeftOf="@+id/tv_posts_reply_count"
+            android:drawableLeft="@drawable/icon_posts_pv"
+            android:drawablePadding="@dimen/margin_5"
+            android:gravity="center"
+            android:text="500" />
+
+        <TextView
+            android:id="@+id/tv_posts_reply_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_posts_pv_count"
+            android:layout_marginRight="@dimen/margin_10"
+            android:drawableLeft="@drawable/icon_posts_comment"
+            android:drawablePadding="@dimen/margin_5"
+            android:gravity="center"
+            android:text="25" />
+
+        <TextView
+            android:id="@+id/tv_posts_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ratingbar_teacher"
+            android:layout_alignTop="@+id/tv_posts_pv_count"
+            android:maxLength="19"
+            android:text="2015-04-29 08:00:00" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_posts_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:text="@string/text_about_out_info"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_inform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:padding="@dimen/margin_10"
+            android:text="@string/text_inform"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="start"
+        android:lineSpacingExtra="@dimen/margin_3"
+        android:minHeight="@dimen/height_20"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:textColor="@color/text_login_color"
+        android:textSize="@dimen/text_size_14" />
+
+    <LinearLayout
+        android:id="@+id/img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <net.dx.etutor.view.imageview.ClickImageView
+            android:id="@+id/img_1_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitStart"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_5"
+            android:clickable="true" />
+
+        <net.dx.etutor.view.imageview.ClickImageView
+            android:id="@+id/img_1_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitStart"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:clickable="true" />
+
+        <net.dx.etutor.view.imageview.ClickImageView
+            android:id="@+id/img_1_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitStart"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:id="@+id/tv_praise_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:text="0人赞过" />
+
+</LinearLayout>

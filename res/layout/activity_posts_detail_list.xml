@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_mine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head_bar" />
+
+    <net.dx.etutor.view.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_posts_first_reply"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-1dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="@dimen/margin_1"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="visible" >
+    </net.dx.etutor.view.pulltorefresh.PullToRefreshListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_44"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/line" />
+
+        <Button
+            android:id="@+id/btn_postsdetail_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_menu_posts_share"
+            android:button="@color/text_black"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/line" />
+
+        <RadioButton
+            android:id="@+id/rb_postsdetail_collect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_menu_posts_collect"
+            android:button="@color/text_black"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/line" />
+
+        <RadioButton
+            android:id="@+id/rb_postsdetail_praise"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_menu_posts_praise"
+            android:button="@color/text_black"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/line" />
+
+        <Button
+            android:id="@+id/btn_postsdetail_refresh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_menu_posts_refresh"
+            android:button="@color/text_black"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/line" />
+    </LinearLayout>
+
+</LinearLayout>

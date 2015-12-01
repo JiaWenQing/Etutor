@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_wheel_dialog_bg" >
+
+        <TextView
+            android:id="@+id/wheel_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="10.0dip"
+            android:text="返回"
+            android:textColor="@color/text_white"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/wheel_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10.0dip"
+            android:text="确定"
+            android:textColor="@color/text_white"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/wheel_dialog_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <net.dx.etutor.view.wheelview.WheelView
+            android:id="@+id/wheel_view_subject"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3" >
+        </net.dx.etutor.view.wheelview.WheelView>
+
+        <net.dx.etutor.view.wheelview.WheelView
+            android:id="@+id/wheel_view_item"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5" >
+        </net.dx.etutor.view.wheelview.WheelView>
+    </LinearLayout>
+
+</LinearLayout>

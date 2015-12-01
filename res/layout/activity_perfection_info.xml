@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_teacher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head_bar" />
+
+    <net.dx.etutor.view.MyScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_order_teacher_n"
+                android:gravity="center_vertical|left"
+                android:padding="@dimen/margin_10"
+                android:text="@string/text_personal_resume"
+                android:textColor="@color/text_white" />
+
+            <LinearLayout
+                android:id="@+id/layout_register_teacher_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:id="@+id/layout_teacher_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:minHeight="@dimen/height_44" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_my_birthday" />
+
+                    <TextView
+                        android:id="@+id/tv_teacher_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical" />
+
+                    <ImageButton
+                        android:id="@+id/imb_teacher_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2.5"
+                        android:background="@drawable/selector_arrow_more" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:id="@+id/layout_graduate_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:minHeight="@dimen/height_44" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_graduate_time" />
+
+                    <TextView
+                        android:id="@+id/tv_graduate_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical" />
+
+                    <ImageButton
+                        android:id="@+id/imb_graduate_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2.5"
+                        android:background="@drawable/selector_arrow_more" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:id="@+id/layout_teacher_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:minHeight="@dimen/height_44" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_teacher_age" />
+
+                    <TextView
+                        android:id="@+id/tv_teaching_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:singleLine="true" />
+
+                    <ImageButton
+                        android:id="@+id/imb_teaching_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2.5"
+                        android:background="@drawable/selector_arrow_more" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:id="@+id/layout_education_degree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:minHeight="@dimen/height_44" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_degree" />
+
+                    <TextView
+                        android:id="@+id/tv_education_degree"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:singleLine="true" />
+
+                    <ImageButton
+                        android:id="@+id/imb_teacher_education_degree"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2.5"
+                        android:background="@drawable/selector_arrow_more" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/height_44" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_major" />
+
+                    <EditText
+                        android:id="@+id/et_teacher_major"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:inputType="text"
+                        android:maxLength="18"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/height_44" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_graduate_school" />
+
+                    <EditText
+                        android:id="@+id/et_graduate_school"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:maxLength="18"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line" />
+        </LinearLayout>
+    </net.dx.etutor.view.MyScrollView>
+
+</LinearLayout>

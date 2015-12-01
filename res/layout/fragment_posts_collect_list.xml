@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/main_head_bar"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_no_collect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_posts_nodata" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/text_no_posts_collect"
+            android:textSize="@dimen/text_size_18"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <net.dx.etutor.view.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_posts_collect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-1dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="@dimen/margin_1"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="visible" >
+    </net.dx.etutor.view.pulltorefresh.PullToRefreshListView>
+
+</LinearLayout>

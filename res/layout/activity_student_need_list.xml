@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head_bar" />
+
+    <include
+        android:id="@+id/layout_finish_network"
+        layout="@layout/item_check_network"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/tv_not_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/margin_10"
+        android:src="@drawable/icon_need_add"
+        android:visibility="gone" />
+    
+    <net.dx.etutor.view.listview.OwnNeedExpandableListView
+        android:id="@+id/student_need_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="@dimen/split_1"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:visibility="visible" >
+    </net.dx.etutor.view.listview.OwnNeedExpandableListView>
+
+</LinearLayout>

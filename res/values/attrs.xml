@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="bmWidth" format="dimension"></attr>
+        <attr name="bmHeight" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="Gallery">
+        <attr name="android:galleryItemBackground"></attr>
+    </declare-styleable>
+
+</resources>

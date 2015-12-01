@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_10"
+    android:paddingTop="@dimen/margin_10" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_8" >
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:text="@string/text_order_number"
+            android:textColor="@color/orange_bg" />
+
+        <TextView
+            android:id="@+id/tv_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_toRightOf="@+id/textView30"
+            android:hint="@string/text_infos"
+            android:textColor="@color/orange_bg" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView30"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:text="@string/text_lecture_times" />
+
+        <TextView
+            android:id="@+id/tv_lecture_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_order_number"
+            android:layout_toRightOf="@+id/textView1"
+            android:hint="@string/text_first_lecture_time" />
+
+        <TextView
+            android:id="@+id/tv_status_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/order_state_success"
+            android:gravity="center|right"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_5"
+            android:text="@string/text_order_status_1"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_status_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/order_state_close"
+            android:clickable="true"
+            android:gravity="center|right"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_5"
+            android:text="@string/text_order_status_2"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_status_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/order_state_success"
+            android:clickable="true"
+            android:gravity="center|right"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_5"
+            android:text="@string/text_order_status_3"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_status_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/order_state_success"
+            android:clickable="true"
+            android:gravity="center|right"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_5"
+            android:text="@string/text_order_status_4"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tv_status_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/order_state_success"
+            android:clickable="true"
+            android:gravity="center|right"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_5"
+            android:text="@string/text_order_status_5"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/setting_dialog_bg_nomal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_65"
+            android:padding="@dimen/padding_10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/setting_push"
+                android:textColor="@color/location_text_color"
+                android:textSize="@dimen/text_size_18" />
+
+            <ToggleButton
+                android:id="@+id/setting_push"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:button="@drawable/selector_button_ios"
+                android:checked="true"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_1"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/setting_help_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_65"
+            android:clickable="true"
+            android:padding="@dimen/padding_10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/setting_help"
+                android:textColor="@color/location_text_color"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:id="@+id/setting_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:drawableRight="@drawable/selector_arrow_setting_back" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_1"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/setting_back_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_65"
+            android:clickable="true"
+            android:padding="@dimen/padding_10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/setting_back"
+                android:textColor="@color/location_text_color"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:id="@+id/setting_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:drawableRight="@drawable/selector_arrow_setting_back" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

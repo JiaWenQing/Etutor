@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_44"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/text_order_receiver"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_receive_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:text="@string/text_choose_teacher"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_44"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/text_order_sender"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_create_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:text="@string/text_choose_parents"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_44"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/text_first_lecture_time"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_first_lecture_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:clickable="true"
+            android:drawablePadding="@dimen/margin_3"
+            android:drawableRight="@drawable/search_teacher_filter_arrow"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/margin_6"
+            android:text="@string/text_assess_time" />
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:id="@+id/layout_pay_way"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_44"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/text_class_hours"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/et_class_hours"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center|right"
+            android:inputType="number"
+            android:maxLength="4"
+            android:hint="@string/text_word_number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_10"
+            android:gravity="center"
+            android:text="小时" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_44"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/text_class_fees"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_class_fees"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:text="@string/text_per"
+                android:textColor="@color/text_need_title"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_5"
+                android:gravity="center_vertical"
+                android:text="@string/text_class_fees_unit"
+                android:textColor="@color/text_need_title"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_44"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/text_total_fees"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/orange_bg"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/tv_total_fees"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:gravity="center"
+                android:text="@string/text_word_number"
+                android:textColor="@color/orange_bg"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="元"
+                android:textColor="@color/orange_bg"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="支付方式"
+            android:textSize="@dimen/text_size_16" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rb_pay_wx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_pay_way"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/icon_pay_wx"
+                android:drawablePadding="@dimen/margin_10"
+                android:text="微信支付\n推荐安装微信客户端的客户使用" />
+
+            <RadioButton
+                android:id="@+id/rb_pay_alipay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/selector_pay_way"
+                android:button="@null"
+                android:drawableLeft="@drawable/icon_pay_alipay"
+                android:drawablePadding="@dimen/margin_10"
+                android:text="支付宝支付\n推荐安装支付宝客户端的客户使用" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit_order_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/selector_button_create_order_teacher"
+        android:text="@string/submit"
+        android:textColor="@color/text_white" />
+
+</LinearLayout>

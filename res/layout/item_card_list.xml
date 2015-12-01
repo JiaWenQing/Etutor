@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/app_bg"
+        android:minHeight="@dimen/height_44"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:clickable="true"
+            android:drawablePadding="@dimen/margin_10"
+            android:drawableRight="@drawable/edit_nomal"
+            android:gravity="center_vertical"
+            android:text="@string/text_my_collect" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_card_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_10"
+            android:clickable="true"
+            android:drawablePadding="@dimen/margin_10"
+            android:drawableRight="@drawable/selector_arrow_enter"
+            android:gravity="center_vertical"
+            android:text="更多"
+            android:textColor="@color/text_login_color" />
+    </LinearLayout>
+
+    <net.dx.etutor.view.ScrollListView
+        android:id="@+id/lv_cards_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-1dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="@dimen/margin_1"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="visible" >
+    </net.dx.etutor.view.ScrollListView>
+
+</LinearLayout>

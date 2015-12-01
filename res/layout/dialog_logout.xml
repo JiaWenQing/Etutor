@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/shape_corners_bg_white"
+    android:gravity="center"
+    android:minWidth="280dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_mydialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:gravity="center"
+        android:text="提示"
+        android:textColor="@color/text_need_title_bg"
+        android:textSize="@dimen/text_size_20"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:padding="5dip"
+            android:text="确认要注销吗？"
+            android:textColor="@color/dialog_cancle"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_0.5"
+        android:background="@color/dialog_cancle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_logout_cancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="@string/text_cancle"
+            android:textColor="@color/dialog_cancle"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:layout_width="@dimen/split_0.5"
+            android:layout_height="match_parent"
+            android:background="@color/dialog_cancle" />
+
+        <Button
+            android:id="@+id/btn_logout_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="@string/confirm"
+            android:textColor="@color/dialog_ensure"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</LinearLayout>

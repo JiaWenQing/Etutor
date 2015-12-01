@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button_text_color"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/pop_filter_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#0000"
+        android:divider="@drawable/filter_line"
+        android:dividerHeight="@dimen/split_1"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item >
+        <shape >
+            <solid android:color="@color/text_white"/>
+        </shape>
+        
+    </item>
+    <item android:top="5dp">
+        <bitmap 
+            android:src="@drawable/menu_home_normal"
+            android:gravity="top|center_horizontal"
+            />
+    </item>
+
+</layer-list>

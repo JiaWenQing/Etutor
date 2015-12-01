@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/student_layout_collect"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_need"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <net.dx.etutor.view.imageview.RoundHeadImageView
+        android:id="@+id/imv_collect_child"
+        android:layout_width="@dimen/height_80"
+        android:layout_height="@dimen/height_80"
+        android:layout_margin="@dimen/padding_5"
+        android:scaleType="fitXY"
+        android:background="@drawable/avatar" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/title_tv_child"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="8"
+                android:text="@string/text_teacher"
+                android:textColor="@color/text_need_title"
+                android:textSize="@dimen/text_size_16" />
+
+            <ImageView
+                android:id="@+id/identify_imv_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_2"
+                android:src="@drawable/icon_identify" 
+                />
+
+            <ImageView
+                android:id="@+id/imv_student_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_2"
+                android:src="@drawable/icon_verify" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_refer_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/text_refer_subject"
+                android:textColor="@color/text_need_item_title"
+                android:textSize="@dimen/text_size_10" />
+
+            <TextView
+                android:id="@+id/tv_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textColor="@color/text_subject_name"
+                android:textSize="@dimen/text_size_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_lecture_count"
+                android:textColor="@color/text_need_item_title"
+                android:textSize="@dimen/text_size_10" />
+
+            <TextView
+                android:id="@+id/tv_lecture_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:textSize="@dimen/text_size_10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="vertical" >
+
+        <RatingBar
+            android:id="@+id/ratingbar_student"
+            style="@style/MyRatingBarBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:numStars="5" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:background="@drawable/shape_student_price_bg"
+            android:gravity="bottom|end"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/text_class_fees"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_size_10" />
+
+            <TextView
+                android:id="@+id/tv_student_class_fees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/text_negotiable"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_size_10" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

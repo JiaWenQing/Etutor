@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center" >
+    
+<!--     <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash" /> -->
+
+    <include
+        layout="@layout/main_head_bar"
+        android:visibility="gone" />
+
+    <!--
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginRight="@dimen/margin_3"
+        android:layout_toLeftOf="@+id/textView1"
+        android:background="@drawable/logo_firstpublish_2"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="97dp"
+        android:text="@string/text_firstpublish_1"
+        android:textSize="@dimen/text_size_14" />
+    -->
+
+
+    <!--
+         <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/logo_firstpublish_2"
+        android:layout_marginBottom="65dp"
+        android:drawablePadding="@dimen/margin_10"
+        android:gravity="center"
+        android:textColor="@color/text_gray"
+        android:text="@string/text_firstpublish_2"
+        android:textSize="@dimen/text_size_14" />
+    -->
+
+
+</RelativeLayout>

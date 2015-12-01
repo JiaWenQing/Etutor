@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_course_table_week"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_title_gray"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_title_gray_bg"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:text="一" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_title_gray_bg"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:text="二" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_title_gray_bg"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:text="三" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_title_gray_bg"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:text="四" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_title_gray_bg"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:text="五" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_title_gray_bg"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:text="六" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_title_gray_bg"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:text="日" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_left_gray"
+            android:gravity="center"
+            android:text="上午" />
+
+        <CheckBox
+            android:id="@+id/rb_1_1"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_1_2"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_1_3"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_1_4"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_1_5"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_1_6"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_1_7"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.0dip"
+        android:orientation="horizontal"
+        android:padding="0.0dip" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_left_gray"
+            android:gravity="center"
+            android:text="下午" />
+
+        <CheckBox
+            android:id="@+id/rb_2_1"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_2_2"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_2_3"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_2_4"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_2_5"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_2_6"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_2_7"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_left_gray"
+            android:gravity="center"
+            android:text="晚上" />
+
+        <CheckBox
+            android:id="@+id/rb_3_1"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_3_2"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_3_3"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_3_4"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_3_5"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_3_6"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/rb_3_7"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/course_checkbox_yellow_style"
+            android:button="@null"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/main_head_bar" />
+
+    <net.dx.etutor.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_20" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/location_nomal" />
+
+                <EditText
+                    android:id="@+id/et_correction_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/text_correction_adress"
+                    android:maxLength="50"
+                    android:inputType="textMultiLine"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/phone_nomal" />
+
+                <EditText
+                    android:id="@+id/et_correction_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:ems="10"
+                    android:maxLength="30"
+                    android:hint="@string/text_correction_phone"
+                    android:inputType="phone"
+                    android:singleLine="true" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/web_nomal" />
+
+                <EditText
+                    android:id="@+id/et_correction_uri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:hint="@string/text_correction_web"
+                    android:inputType="textUri"
+                    android:maxLength="100"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            
+            <LinearLayout
+                android:id="@+id/layout_school_property"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/school_category" />
+
+                <RadioGroup
+                    android:id="@+id/rg_property_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_choose_public"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/margin_30"
+                        android:background="@drawable/selector_lecture_mode"
+                        android:button="@color/text_black"
+                        android:gravity="center"
+                        android:text="@string/text_school_genre_public"
+                        android:textColor="@drawable/selector_textcolor_orange_gray"
+                         />
+
+                    <RadioButton
+                        android:id="@+id/rb_choose_private"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/margin_30"
+                        android:background="@drawable/selector_lecture_mode"
+                        android:button="@color/text_black"
+                        android:gravity="center"
+                        android:text="@string/text_school_genre_private"
+                        android:textColor="@drawable/selector_textcolor_orange_gray"
+                         />
+                    <RadioButton
+                        android:id="@+id/rb_choose_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_lecture_mode"
+                        android:button="@color/text_black"
+                        android:gravity="center"
+                        android:text="@string/text_school_genre_other"
+                        android:textColor="@drawable/selector_textcolor_orange_gray"
+                         />
+                </RadioGroup>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/more_nomal" />
+
+                <EditText
+                    android:id="@+id/et_correction_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:hint="@string/text_correction_more"
+                    android:maxLength="500"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </net.dx.etutor.view.MyScrollView>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@drawable/selector_button_login"
+        android:text="@string/submit"
+        android:textColor="@color/text_white" />
+
+</LinearLayout>

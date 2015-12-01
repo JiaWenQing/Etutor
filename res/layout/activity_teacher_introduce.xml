@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <include layout="@layout/main_head_bar" />
+    </LinearLayout>
+
+    <net.dx.etutor.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <RelativeLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10" >
+
+                <net.dx.etutor.view.imageview.RoundHeadImageView
+                    android:id="@+id/imv_teacher_head"
+                    android:layout_width="@dimen/height_80"
+                    android:layout_height="@dimen/height_80"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/margin_10"
+                    android:clickable="true"
+                    android:padding="@dimen/padding_5"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/avatar" />
+
+                <TextView
+                    android:id="@+id/tv_teacher_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_toRightOf="@+id/imv_teacher_head"
+                    android:text="@string/app_name"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_18" />
+
+                <RatingBar
+                    android:id="@+id/ratingbar_teacher"
+                    style="@style/MyRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_teacher_name"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_toRightOf="@+id/imv_teacher_head"
+                    android:clickable="false"
+                    android:numStars="5"
+                    android:rating="3" />
+
+                <TextView
+                    android:id="@+id/tv_fulltime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/ratingbar_teacher"
+                    android:layout_below="@+id/ratingbar_teacher"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:drawableLeft="@drawable/icon_fulltime"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:text="@string/text_fulltime"
+                    android:textColor="@color/text_gray" />
+
+                <TextView
+                    android:id="@+id/tv_identify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_fulltime"
+                    android:layout_below="@id/tv_fulltime"
+                    android:drawableLeft="@drawable/icon_identify"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:text="@string/text_identify_idcord"
+                    android:textColor="@color/text_gray" />
+
+                <TextView
+                    android:id="@+id/tv_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_identify"
+                    android:layout_below="@id/tv_identify"
+                    android:drawableLeft="@drawable/icon_verify"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:text="@string/text_verify_info"
+                    android:textColor="@color/text_gray" />
+
+                <ImageView
+                    android:id="@+id/imv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_teacher_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:src="@drawable/selector_message_teacher" />
+
+                <ImageView
+                    android:id="@+id/imv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/imv_message"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:src="@drawable/selector_phone_teacher" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <RadioGroup
+                android:id="@+id/rg_teacher_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_44"
+                android:layout_marginTop="@dimen/margin_15"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_person_introduce"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_radio_orange"
+                    android:button="@color/text_black"
+                    android:gravity="center"
+                    android:text="@string/text_personal_resume"
+                    android:textColor="@drawable/selector_textcolor_orange_gray"
+                    android:textSize="@dimen/text_size_18" />
+
+                <View
+                    android:layout_width="@dimen/margin_2"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/line_black" />
+
+                <RadioButton
+                    android:id="@+id/rb_course_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_radio_orange"
+                    android:button="@color/text_black"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/text_teacher_ability"
+                    android:textColor="@drawable/selector_textcolor_orange_gray"
+                    android:textSize="@dimen/text_size_18" />
+
+                <View
+                    android:layout_width="@dimen/margin_2"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/line_black" />
+
+                <RadioButton
+                    android:id="@+id/rb_course_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_radio_orange"
+                    android:button="@color/text_black"
+                    android:gravity="center"
+                    android:text="@string/text_small_class"
+                    android:textColor="@drawable/selector_textcolor_orange_gray"
+                    android:textSize="@dimen/text_size_18" />
+            </RadioGroup>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_350"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@color/text_white" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:id="@+id/layout_look_assess"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_44"
+                android:background="@drawable/selector_need"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_student_assess" />
+
+                <TextView
+                    android:id="@+id/tv_comment_count"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_no_comments" />
+
+                <TextView
+                    android:id="@+id/tvbtn_look_assess"
+                    android:layout_width="@dimen/margin_15"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/selector_arrow_enter"
+                    android:gravity="center_vertical|right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line" />
+
+            <ListView
+                android:id="@+id/lv_student_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10" >
+            </ListView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:padding="@dimen/margin_10"
+                android:text="@string/text_qualification_authentication" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line" />
+
+            <Gallery
+                android:id="@+id/gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:spacing="@dimen/margin_20" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <RelativeLayout
+                android:id="@+id/layout_need_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10" >
+
+                <TextView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_create_order"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btn_create_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_button_create_order_teacher"
+                    android:gravity="center"
+                    android:text="@string/text_create_order"
+                    android:textColor="@color/text_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:layout_toLeftOf="@id/img"
+                    android:background="@drawable/icon_create_order"
+                    android:gravity="center" />
+            </RelativeLayout>
+        </LinearLayout>
+    </net.dx.etutor.view.MyScrollView>
+
+</RelativeLayout>

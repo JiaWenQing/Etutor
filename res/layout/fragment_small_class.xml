@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_10"
+    android:background="@color/text_white"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/main_fragment_head_bar"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_no_class"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/text_no_class"
+        android:textSize="@dimen/text_size_14"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layout_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="left" >
+
+        <TextView
+            android:id="@+id/TextView011"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_20"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/margin_2"
+            android:gravity="center_vertical"
+            android:text="@string/text_class_title"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_20"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView011"
+            android:layout_marginBottom="@dimen/margin_2"
+            android:gravity="center_vertical"
+            android:text="@string/text_lecture_subject"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_20"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView21"
+            android:layout_marginBottom="@dimen/margin_2"
+            android:gravity="center_vertical"
+            android:text="@string/text_listening_info"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_20"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView02"
+            android:layout_marginBottom="@dimen/margin_2"
+            android:gravity="center_vertical"
+            android:text="@string/text_student_number"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_20"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView03"
+            android:layout_marginBottom="@dimen/margin_2"
+            android:gravity="center_vertical"
+            android:text="@string/text_start_time"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_listening_info"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_20"
+            android:layout_below="@+id/textView21"
+            android:layout_toRightOf="@+id/TextView02"
+            android:gravity="center_vertical"
+            android:text="@string/text_yes"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_class_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_20"
+            android:layout_alignLeft="@+id/tv_class_subjects"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:text="@string/text_class_title"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_class_subjects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView21"
+            android:layout_alignBottom="@+id/textView21"
+            android:layout_toRightOf="@+id/textView21"
+            android:text="@string/text_lecture_subjects"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_student_number"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_20"
+            android:layout_alignBaseline="@+id/TextView03"
+            android:layout_alignBottom="@+id/TextView03"
+            android:layout_toRightOf="@+id/TextView03"
+            android:gravity="center_vertical"
+            android:text="0000"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_20"
+            android:layout_alignBaseline="@+id/TextView04"
+            android:layout_alignBottom="@+id/TextView04"
+            android:layout_toRightOf="@+id/TextView04"
+            android:gravity="center_vertical"
+            android:text="@string/text_assess_time"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_20"
+            android:layout_below="@id/TextView04"
+            android:layout_marginBottom="@dimen/margin_2"
+            android:gravity="center_vertical"
+            android:text="@string/text_lecture_area"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_class_area"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_20"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:gravity="center_vertical"
+            android:text="@string/text_infos"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/TextView012"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:text="课程介绍:"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_course_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView012"
+            android:layout_marginBottom="@dimen/margin_2"
+            android:layout_marginTop="@dimen/margin_2"
+            android:background="@drawable/button_bg_normal"
+            android:maxLength="100"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:maxLines="8"
+            android:textColor="@color/text_need_title"
+            android:textSize="@dimen/text_size_14" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_course_intro"
+            android:layout_marginTop="@dimen/margin_2"
+            android:background="@drawable/shape_teacher_price_bg"
+            android:focusable="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_class_fees"
+                android:textColor="@color/bg_order_teacher_n"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tv_preferential_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bg_order_teacher_n"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

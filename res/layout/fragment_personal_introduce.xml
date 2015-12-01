@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_10"
+    android:background="@color/text_white"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/main_fragment_head_bar"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/teacher_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center_vertical|left"
+        android:text="@string/text_sex"
+        android:textColor="@color/text_need_title"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/teacher_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center_vertical|left"
+        android:text="@string/text_age"
+        android:textColor="@color/text_need_title"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/teacher_education_degree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center_vertical|left"
+        android:text="@string/text_education_degree"
+        android:textColor="@color/text_need_title"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/teacher_graduate_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center_vertical|left"
+        android:text="@string/graduate_school"
+        android:textColor="@color/text_need_title"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/teacher_graduate_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center_vertical|left"
+        android:text="@string/text_graduate_time"
+        android:textColor="@color/text_need_title"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/teacher_graduate_major"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center_vertical|left"
+        android:text="@string/text_graduate_major"
+        android:textColor="@color/text_need_title"
+        android:textSize="@dimen/text_size_14" />
+
+</LinearLayout>

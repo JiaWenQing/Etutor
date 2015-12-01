@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_mode_choose"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_44"
+        android:background="@color/gray_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_create_order"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_button_login"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/menu_create_order"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_private_leter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_button_login"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/menu_private_lettle"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</LinearLayout>

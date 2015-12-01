@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_send_message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" >
+
+    <net.dx.etutor.view.imageview.RoundImageView
+        android:id="@+id/imv_send_avatar"
+        android:layout_width="@dimen/height_60"
+        android:layout_height="@dimen/height_60"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_15"
+        android:focusable="false"
+        android:src="@drawable/default_avatar_small" />
+
+    <LinearLayout
+        android:id="@+id/layout_send_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imv_send_avatar"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/height_30"
+        android:layout_marginRight="-5dp"
+        android:layout_toLeftOf="@+id/imv_send_avatar"
+        android:background="@drawable/icon_message_send"
+        android:minWidth="140dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_send_message_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_send_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_send_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="-5dp"
+        android:layout_toLeftOf="@+id/imv_send_avatar"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_send_voice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="@string/text_time"
+            android:textSize="@dimen/text_size_12" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_5"
+            android:singleLine="true"
+            android:text="@string/text_time_mark"
+             />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35" >
+
+            <TextView
+                android:id="@+id/tv_send_voice_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_message_send"
+                 />
+
+            <TextView
+                android:id="@+id/tv_send_voice"
+                android:layout_width="@dimen/margin_12"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tv_send_voice_length"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_15"
+                android:background="@drawable/anim_voice_send"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_send_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imv_send_avatar"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/height_30"
+        android:layout_marginRight="-5dp"
+        android:layout_toLeftOf="@+id/imv_send_avatar"
+        android:background="@drawable/icon_message_send"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <net.dx.etutor.view.imageview.RoundHeadImageView
+            android:id="@+id/imv_send_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="@dimen/margin_100"
+            android:maxWidth="@dimen/margin_100"
+            android:layout_gravity="center"
+            android:src="@drawable/app_logo" />
+    </LinearLayout>
+
+</RelativeLayout>

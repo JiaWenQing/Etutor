@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.dx.etutor"
+    android:versionCode="7"
+    android:versionName="2.2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <permission
+        android:name="net.dx.etutor.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- 权限 -->
+    <uses-permission android:name="net.dx.etutor.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name="net.dx.etutor.app.EtutorApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/ThemeActivity" >
+        <uses-library android:name="android.test.runner" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="g9gLVcHNjMOVhWkmazvSueb7" />
+        <!-- g9gLVcHNjMOVhWkmazvSueb7 7eRGhIXsj4INnbkvcwTYXC16 NMZsnPsCU49cLH0Eadwyrp8o -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.NavigateActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.setting.RuleActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.MainFragmentActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.setting.FeedbackActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.academy.AcademyListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.academy.CorrectionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.setting.AboutOurActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.setting.HelpActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.LocationCityActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.CardContralActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ImageShowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.register.ForgetPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.home.CollectActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.home.MyUploadActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.home.MyUploadPreviewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.home.PersonalSettingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.home.LocationPersonalActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.home.CopyOfLocationPersonalActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.setting.SystemSettingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.student.StudentIntroActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.search.SearchTeacherActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.student.StudentNeedListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.student.StudentNeedCreateActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.teacher.NeedStudentListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.search.SearchStudentNeedActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.teacher.TeacherListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.forum.ForumListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.teacher.TeacherIntroActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.teacher.TeacherSettingCourseActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.search.SearchAgencyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.academy.AgencyDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.search.SearchSchoolActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.academy.SchoolDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.dx.etutor.activity.academy.LocationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.register.PerfectionInfoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.register.RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.register.BindingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.register.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.comment.CommentListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.comment.CommentDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.comment.CommentWriteActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.order.OrderCreateActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxf3e38f7900ef8e61"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.order.OrderDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.forum.ForumDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.forum.MyPostsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.forum.ForumTopicListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.forum.PostsDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.forum.ReplyPostsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.forum.SendPostsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.forum.SecondPostsListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.forum.InformPostsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.forum.InformPostsFristActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.forum.PostsListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.message.PrivateMessageDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".ReturnActivity" >
+        </activity>
+         <activity
+            android:name=".activity.order.alipay.PayDemoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1103377550" />
+                <!-- 222222 1103377550 -->
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="net.dx.etutor" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="net.dx.etutor.service.NoticeService"
+            android:enabled="true" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="net.dx.etutor" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="net.dx.etutor.receiver.OrderReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="net.dx.etutor" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="net.dx.etutor.receiver.StatisticReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="net.dx.etutor.receiver.StatisticReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="net.dx.etutor.receiver.ShutdownBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="50a166dca0d6111d6c9385fd" /> <!-- </>值来自开发者平台取得的AppKey -->
+        <!-- 友盟数据统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="54f115eefd98c5d7c8000736" >
+        </meta-data>
+        <!--
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="@string/channel_name" >
+        </meta-data>
+        -->
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- alipay sdk end -->
+
+
+        <!-- AnalyticsConfig.setChannel(Constants.APP_CHANNEL);// 渠道 -->
+    </application>
+    <!-- 启动测试器 -->
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="Tests for My App"
+        android:targetPackage="net.dx.etutor" />
+
+</manifest>

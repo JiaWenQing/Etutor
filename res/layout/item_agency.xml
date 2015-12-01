@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_need"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/agency_layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:clickable="true" >
+
+        <net.dx.etutor.view.imageview.RoundHeadImageView
+            android:id="@+id/iv_agency_pic"
+            android:layout_width="@dimen/height_80"
+            android:layout_height="@dimen/height_80"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/home_agency"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_40"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_toRightOf="@+id/iv_agency_pic"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="名称"
+            android:textColor="@color/text_login_color"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_toRightOf="@+id/iv_agency_pic"
+            android:drawableLeft="@drawable/phone_small"
+            android:drawablePadding="@dimen/padding_5"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="电话"
+            android:textColor="@color/text_login_color"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_telephone"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_toRightOf="@+id/iv_agency_pic"
+            android:drawableLeft="@drawable/location_small"
+            android:drawablePadding="@dimen/padding_5"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="地址"
+            android:textColor="@color/text_login_color"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="@dimen/height_80"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_agency_pic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:background="@drawable/layer_agency_distance_bg"
+            android:gravity="center"
+            android:textColor="@color/text_white" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/line" />
+
+</LinearLayout>

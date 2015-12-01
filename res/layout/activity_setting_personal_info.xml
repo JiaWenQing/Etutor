@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/personal_setting_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head_bar" />
+
+    <net.dx.etutor.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/height_44" >
+
+                <net.dx.etutor.view.imageview.RoundImageView
+                    android:id="@+id/imv_choose_head"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:padding="@dimen/padding_5"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_avatar_small" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_my_head" />
+
+                <ImageButton
+                    android:id="@+id/imb_choose_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/selector_arrow_enter"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:text="@string/text_my_name"
+                    android:textSize="@dimen/text_size_14" />
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:inputType="textPersonName"
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:text="@string/text_contact_info"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:hint="@string/text_input_contact_info"
+                    android:singleLine="true"
+                    android:textColor="@color/text_login_color"
+                    android:textColorHint="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:text="@string/text_address"
+                    android:textSize="@dimen/text_size_14" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/text_input_address"
+                    android:inputType="textPostalAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/text_login_color"
+                    android:textColorHint="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+
+                <ImageView
+                    android:id="@+id/imv_location"
+                    android:layout_width="@dimen/margin_20"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_20"
+                    android:gravity="center"
+                    android:src="@drawable/selector_icon_location" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:id="@+id/layout_user_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="@dimen/height_44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:text="@string/text_my_sex"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_user_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+
+                <ImageButton
+                    android:id="@+id/imb_user_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/selector_arrow_more"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_10"
+                    android:text="@string/text_graduate_school"
+                    android:textSize="@dimen/text_size_14" />
+
+                <EditText
+                    android:id="@+id/et_graduate_school"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_idcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg_normal"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/height_60" >
+
+                <ImageView
+                    android:id="@+id/imv_upload_idcard"
+                    android:layout_width="@dimen/width_80"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:padding="@dimen/padding_5"
+                    android:src="@drawable/upload_idcard" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_login_color"
+                    android:text="@string/text_input_identity_info" />
+
+                <ImageButton
+                    android:id="@+id/imb_upload_idcard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_arrow_enter"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_teacher_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:id="@+id/layout_graduate_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:minHeight="@dimen/height_44" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_graduate_time"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_graduate_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_login_color"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <ImageButton
+                        android:id="@+id/imb_graduate_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:background="@drawable/selector_arrow_more" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:id="@+id/layout_teacher_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:minHeight="@dimen/height_44" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_teacher_age" />
+
+                    <TextView
+                        android:id="@+id/tv_teaching_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/text_login_color"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <ImageButton
+                        android:id="@+id/imb_teaching_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:background="@drawable/selector_arrow_more" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:id="@+id/layout_education_degree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:minHeight="@dimen/height_44" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_degree" />
+
+                    <TextView
+                        android:id="@+id/tv_education_degree"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/text_login_color"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <ImageButton
+                        android:id="@+id/imb_teacher_education_degree"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:background="@drawable/selector_arrow_more" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:id="@+id/layout_user_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:minHeight="@dimen/height_44" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:text="@string/text_my_birthday" />
+
+                    <TextView
+                        android:id="@+id/tv_user_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/text_login_color"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <ImageButton
+                        android:id="@+id/imb_user_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/selector_arrow_more"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/height_44" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_major" />
+
+                    <EditText
+                        android:id="@+id/et_teacher_major"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:inputType="text"
+                        android:maxLength="18"
+                        android:singleLine="true"
+                        android:textColor="@color/text_login_color"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/selector_button_create_order_teacher"
+                android:text="@string/text_save"
+                android:textColor="@color/button_text_color" />
+        </LinearLayout>
+    </net.dx.etutor.view.MyScrollView>
+
+</LinearLayout>

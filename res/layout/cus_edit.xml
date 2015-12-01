@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/app_bg"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/mEdt_parking_one"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:padding="2dip" >
+    </EditText>
+
+    <View
+        android:layout_width="@dimen/split_0.5"
+        android:layout_height="50dip"
+        android:background="@color/text_login_color" />
+
+    <EditText
+        android:id="@+id/mEdt_parking_two"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:padding="2dip" />
+
+    <View
+        android:layout_width="@dimen/split_0.5"
+        android:layout_height="50dip"
+        android:background="@color/text_login_color" />
+
+    <EditText
+        android:id="@+id/mEdt_parking_three"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:padding="2dip" />
+
+    <View
+        android:layout_width="@dimen/split_0.5"
+        android:layout_height="50dip"
+        android:background="@color/text_login_color" />
+
+    <EditText
+        android:id="@+id/mEdt_parking_four"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1" />
+
+</LinearLayout>

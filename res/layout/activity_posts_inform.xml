@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head_bar" />
+
+    <net.dx.etutor.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <net.dx.etutor.view.imageview.RoundHeadImageView
+                    android:id="@+id/imv_poster_avatar"
+                    android:layout_width="@dimen/height_50"
+                    android:layout_height="@dimen/height_50"
+                    android:layout_margin="@dimen/margin_10"
+                    android:clickable="true"
+                    android:padding="@dimen/padding_5"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/avatar" />
+
+                <TextView
+                    android:id="@+id/tv_poster_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10"
+                    android:text="@string/app_name"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_posts_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/margin_15"
+                android:text="@string/app_name"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:gravity="start"
+                android:lineSpacingExtra="@dimen/margin_3"
+                android:minHeight="@dimen/height_20"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:textColor="@color/text_login_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <LinearLayout
+                android:id="@+id/img_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@android:color/white"
+                android:orientation="horizontal" >
+
+                <net.dx.etutor.view.imageview.ClickImageView
+                    android:id="@+id/img_1_1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_100"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_weight="1"
+                    android:clickable="true" />
+
+                <net.dx.etutor.view.imageview.ClickImageView
+                    android:id="@+id/img_1_2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_100"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_weight="1"
+                    android:clickable="true" />
+
+                <net.dx.etutor.view.imageview.ClickImageView
+                    android:id="@+id/img_1_3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_100"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_weight="1"
+                    android:clickable="true" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/et_feedback_posts"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_130"
+                    android:layout_margin="@dimen/margin_10"
+                    android:background="@drawable/shape_student_shield_price_bg"
+                    android:gravity="top|left"
+                    android:hint="@string/text_inform_info"
+                    android:inputType="textMultiLine"
+                    android:maxLength="200"
+                    android:maxLines="6"
+                    android:textSize="@dimen/text_size_14" />
+
+                <RadioGroup
+                    android:id="@+id/rg_inform"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_inform_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/selector_button_redio_inform"
+                        android:drawablePadding="@dimen/margin_6"
+                        android:text="广告" />
+
+                    <RadioButton
+                        android:id="@+id/rb_inform_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/selector_button_redio_inform"
+                        android:drawablePadding="@dimen/margin_6"
+                        android:text="色情" />
+
+                    <RadioButton
+                        android:id="@+id/rb_inform_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/selector_button_redio_inform"
+                        android:drawablePadding="@dimen/margin_6"
+                        android:text="反动" />
+
+                    <RadioButton
+                        android:id="@+id/rb_inform_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/selector_button_redio_inform"
+                        android:drawablePadding="@dimen/margin_6"
+                        android:text="头像" />
+
+                    <RadioButton
+                        android:id="@+id/rb_inform_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/selector_button_redio_inform"
+                        android:drawablePadding="@dimen/margin_6"
+                        android:text="其他" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <Button
+                android:id="@+id/btn_submit_posts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/selector_button_create_order_student"
+                android:text="@string/submit"
+                android:textColor="@color/button_text_color" />
+        </LinearLayout>
+    </net.dx.etutor.view.MyScrollView>
+
+</LinearLayout>

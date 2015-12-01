@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+	<RelativeLayout 
+	    android:id="@+id/mark_layout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true">
+	    <TextView
+	        android:id="@+id/tv_mark_info"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/icon_mark"
+	        android:paddingTop="@dimen/margin_10"
+	        android:paddingRight="@dimen/margin_10"
+	        android:paddingLeft="@dimen/margin_10"
+	        android:paddingBottom="@dimen/margin_25"
+	        android:minWidth="40.0dip"
+	        android:layout_centerHorizontal="true"
+	        android:singleLine="true"
+	        android:textColor="#232323" />
+	
+	    <ImageView
+	        android:id="@+id/imv_mark"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/tv_mark_info"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/icon_mark_bg" />
+	
+	</RelativeLayout>
+</RelativeLayout>

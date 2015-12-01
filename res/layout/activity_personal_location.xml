@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/imv_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_mark_bg" />
+
+        <ImageView
+            android:id="@+id/imv_location_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_location_home" />
+
+        <TextView
+            android:id="@+id/tv_mark_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imv_mark"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_mark"
+            android:minWidth="40.0dip"
+            android:paddingTop="@dimen/margin_5"
+	        android:paddingRight="@dimen/margin_10"
+	        android:paddingLeft="@dimen/margin_10"
+	        android:paddingBottom="@dimen/margin_25"
+            android:singleLine="true"
+            android:textColor="#232323" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_address"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

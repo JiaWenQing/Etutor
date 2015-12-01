@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_system_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/margin_10"
+    android:paddingBottom="@dimen/margin_10"
+    android:paddingLeft="@dimen/margin_10" >
+
+    <TextView
+        android:id="@+id/tv_system_message_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignLeft="@+id/tv_system_time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tv_system_message_icon"
+        android:textSize="@dimen/text_size_12"
+        android:text="@string/text_infos" />
+
+    <TextView
+        android:id="@+id/tv_system_certification_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_system_message_info"
+        android:background="@drawable/icon_system_certification"
+        android:gravity="center"
+        android:paddingTop="@dimen/margin_5"
+        android:paddingBottom="@dimen/margin_5"
+        android:text="@string/text_certification"
+        android:textColor="@color/text_white" />
+
+    <TextView
+        android:id="@+id/tv_system_message_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@+id/tv_system_certification_icon"
+        android:background="@drawable/icon_system_message"
+        android:gravity="center"
+        android:paddingTop="@dimen/margin_5"
+        android:paddingBottom="@dimen/margin_5"
+        android:text="@string/text_system"
+        android:textColor="@color/text_white" />
+
+    <TextView
+        android:id="@+id/tv_system_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/text_size_12"
+        android:layout_alignBottom="@+id/tv_system_message_icon"
+        android:layout_below="@+id/tv_system_message_info"
+        android:text="@string/text_input_graduate_time" />
+
+</RelativeLayout>

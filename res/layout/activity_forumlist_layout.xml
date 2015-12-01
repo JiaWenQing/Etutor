@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/forum_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/abc_search_url_text_sousuo"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_30"
+            android:layout_marginBottom="@dimen/margin_3"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_marginRight="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_4"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/forumlst_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_26"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/forum_text_OK"
+                android:background="@drawable/rounded_edittext"
+                android:cursorVisible="false"
+                android:hint="@string/activity_forum_edit"
+                android:paddingLeft="@dimen/margin_27"
+                android:singleLine="true"
+                android:textSize="@dimen/margin_13" />
+
+            <TextView
+                android:id="@+id/forum_text_OK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/forumlst_edit"
+                android:layout_alignBottom="@+id/forumlst_edit"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:gravity="center_horizontal"
+                android:text="@string/forum_text_OK"
+                android:textColor="@color/text_OK"
+                android:textSize="@dimen/margin_16"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/image_suosou"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_26"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/margin_4"
+                android:background="@drawable/rounded_edittext"
+                android:src="@drawable/sreach_fangfajing" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/forum_zhulist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <RadioGroup
+            android:id="@+id/forum_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_44"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/forum_new"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_radio_blue"
+                android:button="@color/text_black"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/forum_new"
+                android:textColor="@drawable/selector_textcolor_blue_gray"
+                android:textSize="@dimen/text_size_18" />
+
+            <RadioButton
+                android:id="@+id/forum_hot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_radio_blue"
+                android:button="@color/text_black"
+                android:gravity="center"
+                android:text="@string/forum_hot"
+                android:textColor="@drawable/selector_textcolor_blue_gray"
+                android:textSize="@dimen/text_size_18" />
+
+            <RadioButton
+                android:id="@+id/forum_essence"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_radio_blue"
+                android:button="@color/text_black"
+                android:gravity="center"
+                android:text="@string/forum_essence"
+                android:textColor="@drawable/selector_textcolor_blue_gray"
+                android:textSize="@dimen/text_size_18" />
+        </RadioGroup>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/forumlist_vpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/text_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/souduo_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/layout_finish_network"
+            layout="@layout/item_check_network"
+            android:visibility="gone" />
+
+        <net.dx.etutor.view.pulltorefresh.PullToRefreshListView
+            android:id="@+id/forum_search_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-1dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="@dimen/margin_1"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:visibility="visible"
+            android:background="@android:color/white"
+             >
+        </net.dx.etutor.view.pulltorefresh.PullToRefreshListView>
+
+        <ImageView
+            android:id="@+id/image_search"
+            android:layout_width="@dimen/margin_200"
+            android:layout_height="@dimen/margin_200"
+            android:src="@drawable/sreach_nothing"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_nothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/nothing"
+            android:textColor="@color/text_OK" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/release_holder"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_need_release"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/release_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="重新发布"
+            android:textColor="@color/button_text_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shield_holder"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_need_shield"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/shield_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="屏蔽"
+            android:textColor="@color/button_text_color" />
+    </RelativeLayout>
+
+</merge>

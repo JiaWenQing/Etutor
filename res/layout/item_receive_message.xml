@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_receive_message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" >
+
+    <net.dx.etutor.view.imageview.RoundImageView
+        android:id="@+id/imv_receive_avatar"
+        android:layout_width="@dimen/height_60"
+        android:layout_height="@dimen/height_60"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_15"
+        android:focusable="false"
+        android:src="@drawable/default_avatar_small" />
+
+    <LinearLayout
+        android:id="@+id/layout_receive_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imv_receive_avatar"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/margin_30"
+        android:layout_toRightOf="@+id/imv_receive_avatar"
+        android:background="@drawable/icon_message_receive"
+        android:layout_marginLeft="-5dp"
+        android:minWidth="140dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_receive_message_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_white"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_receive_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_receive_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/margin_30"
+        android:layout_marginLeft="-5dp"
+        android:layout_toRightOf="@+id/imv_receive_avatar"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35"
+            >
+
+            <TextView
+                android:id="@+id/tv_receive_voice_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_message_receive"
+                 />
+
+            <TextView
+                android:id="@+id/tv_receive_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_receive_voice_length"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:background="@drawable/anim_voice_receive"
+                android:gravity="center_vertical" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_receive_voice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:singleLine="true"
+            android:text="@string/text_time"
+            android:textSize="@dimen/text_size_12" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:text="@string/text_time_mark"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_receive_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imv_receive_avatar"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/margin_30"
+        android:layout_toRightOf="@+id/imv_receive_avatar"
+        android:background="@drawable/icon_message_receive"
+        android:orientation="vertical"
+        android:layout_marginLeft="-5dp"
+        android:visibility="gone" >
+
+        <net.dx.etutor.view.imageview.RoundHeadImageView
+            android:id="@+id/imv_receive_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="@dimen/margin_100"
+            android:maxWidth="@dimen/margin_100"
+            android:layout_gravity="center"
+            android:src="@drawable/app_logo" />
+    </LinearLayout>
+
+</RelativeLayout>

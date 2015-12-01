@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_5" >
+
+    <GridView
+        android:id="@+id/gv_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="10dp"
+        android:background="#e6e6e6"
+        android:numColumns="3" >
+    </GridView>
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+        <TextView 
+            android:id="@+id/tv_share_weixin_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/app_logo"
+            android:gravity="center"
+            android:text="@string/text_share_weixin_circle"
+            android:textSize="@dimen/text_size_10"
+            />
+        <TextView 
+            android:id="@+id/tv_share_weixin_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/app_logo"
+            android:gravity="center"
+            android:text="@string/text_share_weixin_friend"
+            android:textSize="@dimen/text_size_10"
+            />
+        <TextView 
+            android:id="@+id/tv_share_qq_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/app_logo"
+            android:gravity="center"
+            android:text="@string/text_share_qq_friend"
+            android:textSize="@dimen/text_size_10"
+            />
+    </LinearLayout>
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+        <TextView 
+            android:id="@+id/tv_share_qq_qzone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/app_logo"
+            android:gravity="center"
+            android:text="@string/text_share_qq_qzone"
+            android:textSize="@dimen/text_size_10"
+            />
+        <TextView 
+            android:id="@+id/tv_share_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/app_logo"
+            android:gravity="center"
+            android:text="@string/text_share_weibo"
+            android:textSize="@dimen/text_size_10"
+            />
+    </LinearLayout> -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+    <Button
+        android:id="@+id/share_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/selector_photo_cancel"
+        android:paddingBottom="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_10"
+        android:textColor="@color/text_red"
+        android:text="@string/text_cancle"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_fragment_head_bar" />
+
+    <net.dx.etutor.view.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/sv_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/fl_banner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_homepage_student"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:drawableTop="@drawable/home_student_nomal"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="@string/text_home_student"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_homepage_teacher"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:drawableTop="@drawable/home_teacher_nomal"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="@string/text_home_teacher"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_homepage_forum"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:drawableTop="@drawable/home_forum_normal"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="@string/text_home_forum"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_homepage_academy"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:drawableTop="@drawable/home_school_nomal"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="@string/text_home_academy"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_44"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:background="@drawable/sys_message_icon" />
+
+                <net.dx.etutor.view.AutoTextView
+                    android:id="@+id/tv_homepage_system_message"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/tv_homepage_cards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:drawableLeft="@drawable/icon_add_card"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/text_home_add_card"
+                    android:textColor="@color/text_login_color"
+                    android:textColorHint="@color/text_login_color"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line" />
+
+            <net.dx.etutor.view.ScrollListView
+                android:id="@+id/lv_homepage_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:childDivider="@null"
+                android:groupIndicator="@null"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </net.dx.etutor.view.pulltorefresh.PullToRefreshScrollView>
+
+</LinearLayout>

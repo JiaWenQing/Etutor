@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="32.0dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/filter_new"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/selector_need"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/text_filter_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawablePadding="6.0dip"
+            android:drawableRight="@drawable/search_teacher_filter_arrow_down"
+            android:singleLine="true"
+            android:text="@string/text_filter_new" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@color/button_text_color"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:src="@drawable/search_teacher_filter_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filter_authenticate"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/selector_need"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/text_filter_authenticate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6.0dip"
+            android:drawableRight="@drawable/search_teacher_filter_arrow_white"
+            android:singleLine="true"
+            android:text="@string/text_filter_authenticate" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@color/button_text_color"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:src="@drawable/search_teacher_filter_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filter_appraise"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/selector_need"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/text_filter_appraise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6.0dip"
+            android:drawableRight="@drawable/search_teacher_filter_arrow_white"
+            android:singleLine="true"
+            android:text="@string/text_filter_appraise" />
+    </LinearLayout>
+
+</LinearLayout>

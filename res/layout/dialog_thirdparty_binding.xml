@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_5" >
+
+    <Button
+        android:id="@+id/binding_qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_photo_gallery"
+        android:paddingBottom="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_10"
+        android:text="@string/text_binding_qq"
+        android:textColor="@color/pic_choice_color"
+        android:textSize="@dimen/text_size_16" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+    <Button
+        android:id="@+id/binding_sina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_photo_camera"
+        android:paddingBottom="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_10"
+        android:text="@string/text_binding_sina"
+        android:textColor="@color/pic_choice_color"
+        android:textSize="@dimen/text_size_16" />
+
+    <Button
+        android:id="@+id/binding_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/selector_photo_cancel"
+        android:paddingBottom="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_10"
+        android:textColor="@color/text_red"
+        android:text="@string/text_cancle"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

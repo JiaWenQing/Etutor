@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_student_need"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head_bar" />
+
+    <net.dx.etutor.view.MyScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_need_title_bg"
+                android:minHeight="@dimen/height_44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:text="@string/text_need_title"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_title"
+                    android:textSize="@dimen/text_size_14" />
+
+                <EditText
+                    android:id="@+id/et_student_need_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/text_info"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="@color/text_login_color"
+                    android:textColorHint="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_refer_subject"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_add_need_itemname"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/text_subject"
+                    android:textColor="@color/text_login_color"
+                    android:textColorHint="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+
+                <ImageButton
+                    android:id="@+id/imb_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/selector_arrow_more"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_teacher_sex"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_add_teacher_sex"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_mode_1"
+                    android:textColor="@color/text_login_color"
+                    android:textColorHint="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+
+                <ImageButton
+                    android:id="@+id/imb_choose_teacher_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/selector_arrow_more" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_teaching_mode"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_add_teaching_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_mode_1"
+                    android:textColor="@color/text_login_color"
+                    android:textColorHint="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+
+                <ImageButton
+                    android:id="@+id/imb_choose_teaching_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/selector_arrow_more" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_lecture_mode"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_add_lecture_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_mode_1"
+                    android:textColor="@color/text_login_color"
+                    android:textColorHint="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+
+                <ImageButton
+                    android:id="@+id/imb_choose_lecture_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/selector_arrow_more" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_class_fees1"
+                    android:textSize="@dimen/text_size_14" />
+
+                <EditText
+                    android:id="@+id/et_class_fees"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/text_class_fees2"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textColor="@color/text_login_color"
+                    android:textColorHint="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_class_fees_unit"
+                    android:textColor="@color/gray_bg"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:id="@+id/parent_classfee_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_lecture_count"
+                    android:textSize="@dimen/text_size_14" />
+
+                <EditText
+                    android:id="@+id/et_lecture_count"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/text_class_fees2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/text_login_color"
+                    android:textColorHint="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_lecture_unit"
+                    android:textColor="@color/gray_bg"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_need_title_bg"
+                android:minHeight="@dimen/height_44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:text="@string/text_introduce"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_100"
+                android:layout_marginTop="@dimen/margin_10" >
+
+                <EditText
+                    android:id="@+id/et_student_introduce"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:hint="@string/text_write_introduce"
+                    android:inputType="textMultiLine"
+                    android:maxLength="100"
+                    android:maxLines="7"
+                    android:scrollHorizontally="false"
+                    android:singleLine="false"
+                    android:textColor="@color/text_login_color"
+                    android:textColorHint="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_word_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toLeftOf="@+id/tv_total_words"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_total_words"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_word_number"
+                    android:layout_alignBottom="@+id/tv_word_number"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:textSize="@dimen/text_size_14" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/text_need_title_bg"
+                android:minHeight="@dimen/height_44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:text="@string/text_courser_time"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10" >
+
+                <include layout="@layout/course_table_gray_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_student_need_preview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_button_login"
+                    android:text="@string/text_preview"
+                    android:textColor="@color/button_text_color" />
+
+                <Button
+                    android:id="@+id/btn_student_need_release"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_button_login"
+                    android:text="@string/text_release"
+                    android:textColor="@color/button_text_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </net.dx.etutor.view.MyScrollView>
+
+</LinearLayout>

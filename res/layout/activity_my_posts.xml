@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <include layout="@layout/main_head_bar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:orientation="vertical" >
+
+
+        <RadioGroup
+            android:id="@+id/rg_my_posts"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_44"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_posts_issue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_radio_blue"
+                android:button="@color/text_black"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/text_my_issue"
+                android:textColor="@drawable/selector_textcolor_blue_gray"
+                android:textSize="@dimen/text_size_18" />
+
+            <View
+                android:layout_width="@dimen/margin_2"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/line_black" />
+
+            <RadioButton
+                android:id="@+id/rb_posts_collect"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_radio_blue"
+                android:button="@color/text_black"
+                android:gravity="center"
+                android:text="@string/text_my_collect"
+                android:textColor="@drawable/selector_textcolor_blue_gray"
+                android:textSize="@dimen/text_size_18" />
+        </RadioGroup>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_posts"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/text_white" />
+    </LinearLayout>
+
+</RelativeLayout>

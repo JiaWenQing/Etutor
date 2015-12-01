@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:gravity="center_vertical|left" >
+
+        <net.dx.etutor.view.imageview.RoundImageView
+            android:id="@+id/imv_head"
+            android:layout_width="@dimen/width_45"
+            android:layout_height="@dimen/width_45"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:background="@drawable/default_avatar"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:text="@string/app_name"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left" >
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                style="@style/MyRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:numStars="5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_200"
+        android:padding="@dimen/margin_5" >
+
+        <EditText
+            android:id="@+id/et_write_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_common_toast"
+            android:gravity="top|left"
+            android:hint="@string/text_write_assess"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:scrollHorizontally="false"
+            android:singleLine="false" />
+
+        <TextView
+            android:id="@+id/tv_surplus_word_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/tv_total_word_number"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_20" />
+
+        <TextView
+            android:id="@+id/tv_total_word_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="@dimen/margin_10"
+            android:textSize="@dimen/text_size_20" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/margin_18"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_evaluate_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:drawableLeft="@drawable/face_big_good" />
+
+        <RadioButton
+            android:id="@+id/rb_evaluate_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/face_big_ordinary" />
+
+        <RadioButton
+            android:id="@+id/rb_evaluate_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/face_big_bad" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_submit_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/selector_button_login"
+        android:text="@string/submit"
+        android:textColor="@color/text_white" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/main_head_bar"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layout_finish_network"
+        layout="@layout/item_check_network"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/tv_not_info_school"
+        android:layout_width="@dimen/margin_200"
+        android:layout_height="@dimen/margin_220"
+        android:layout_marginRight="35dp"
+        android:src="@drawable/icon_release"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_no_essence"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_posts_nodata" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/text_no_posts_essence"
+            android:textSize="@dimen/text_size_18"
+            android:visibility="visible" 
+            android:textColor="@color/text_need_item_title"
+            />
+    </LinearLayout>
+
+    <net.dx.etutor.view.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_school"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-1dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="@dimen/margin_1"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="visible" >
+    </net.dx.etutor.view.pulltorefresh.PullToRefreshListView>
+
+</LinearLayout>

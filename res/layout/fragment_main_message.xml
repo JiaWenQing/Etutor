@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <net.dx.etutor.view.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_private_message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="-1dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="@dimen/margin_1"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="visible" >
+    </net.dx.etutor.view.pulltorefresh.PullToRefreshListView>
+
+    <TextView
+        android:id="@+id/tv_not_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:background="@color/text_white"
+        android:gravity="center"
+        android:text="@string/text_no_info"
+        android:textSize="@dimen/text_size_18"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/text_white"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_not_login"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_finish_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/text_white"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <include layout="@layout/item_check_network" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/main_fragment_head_bar"
+        android:visibility="visible" />
+
+</RelativeLayout>

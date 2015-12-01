@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_teacher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_order_teacher_p"
+            android:padding="@dimen/margin_10"
+            android:text="@string/text_lecture_area1"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@color/text_white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvbtn_province"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg_normal"
+                android:drawableRight="@drawable/search_teacher_filter_arrow"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/text_choose"
+                android:textSize="@dimen/text_size_10" />
+
+            <TextView
+                android:id="@+id/tvbtn_city"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg_normal"
+                android:drawableRight="@drawable/search_teacher_filter_arrow"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/text_choose"
+                android:textSize="@dimen/text_size_10" />
+
+            <TextView
+                android:id="@+id/tvbtn_region"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg_normal"
+                android:drawableRight="@drawable/search_teacher_filter_arrow"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/text_choose"
+                android:textSize="@dimen/text_size_10" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10"
+            android:text="@string/text_listening_choose"
+            android:textSize="@dimen/text_size_14" />
+
+        <RadioGroup
+            android:id="@+id/rg_listening_choose"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_listening_y"
+                android:layout_width="@dimen/width_80"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="@dimen/margin_3"
+                android:button="@drawable/selector_button_redio"
+                android:gravity="center"
+                android:text="@string/text_yes"
+                android:textSize="@dimen/text_size_10" />
+
+            <RadioButton
+                android:id="@+id/rb_listening_n"
+                android:layout_width="@dimen/width_80"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="@dimen/margin_3"
+                android:button="@drawable/selector_button_redio"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/text_no"
+                android:textSize="@dimen/text_size_10" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" />
+
+    <RadioGroup
+        android:id="@+id/rg_teaching_model"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_40"
+        android:background="@color/text_white"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_model_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_orange"
+            android:button="@color/text_black"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/text_teaching_mode_1"
+            android:textColor="@drawable/selector_textcolor_orange_gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <View
+            android:layout_width="@dimen/margin_2"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/line_black" />
+
+        <RadioButton
+            android:id="@+id/rb_model_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_orange"
+            android:button="@color/text_black"
+            android:gravity="center"
+            android:text="@string/text_teaching_mode_2"
+            android:textColor="@drawable/selector_textcolor_orange_gray"
+            android:textSize="@dimen/text_size_16" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_set_course"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/text_white" />
+
+    <Button
+        android:id="@+id/btn_submit_set_course"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/selector_button_create_order_teacher"
+        android:text="@string/submit"
+        android:textColor="@color/text_white" />
+
+</LinearLayout>

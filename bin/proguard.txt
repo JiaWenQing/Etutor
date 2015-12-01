@@ -1,0 +1,408 @@
+# view res/layout/activity_academy_list.xml #generated:7
+# view res/layout/activity_forumlist_layout.xml #generated:121
+# view res/layout/activity_my_posts.xml #generated:64
+# view res/layout/activity_navigate.xml #generated:8
+# view res/layout/activity_set_course_info.xml #generated:173
+# view res/layout/activity_teacher_introduce.xml #generated:200
+# view res/layout/fragment_banner.xml #generated:7
+# view res/layout/fragment_main_orderlist.xml #generated:14
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/abc_action_menu_item_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ActionMenuItemView { <init>(...); }
+
+# view res/layout/abc_action_menu_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ActionMenuView { <init>(...); }
+
+# view res/layout/abc_expanded_menu_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ExpandedMenuView { <init>(...); }
+
+# view res/layout/abc_list_menu_item_layout.xml #generated:17
+# view res/layout/abc_popup_menu_item_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ListMenuItemView { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_include.xml #generated:19
+# view res/layout/abc_action_bar_decor_include.xml #generated:47
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:29
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:52
+-keep class android.support.v7.internal.widget.ActionBarContainer { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_include.xml #generated:31
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:40
+# view res/layout/abc_action_mode_bar.xml #generated:19
+-keep class android.support.v7.internal.widget.ActionBarContextView { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:17
+-keep class android.support.v7.internal.widget.ActionBarOverlayLayout { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_include.xml #generated:25
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:35
+-keep class android.support.v7.internal.widget.ActionBarView { <init>(...); }
+
+# view res/layout/abc_action_bar_home.xml #generated:17
+-keep class android.support.v7.internal.widget.ActionBarView$HomeView { <init>(...); }
+
+# view res/layout/abc_action_bar_tabbar.xml #generated:17
+# view res/layout/abc_activity_chooser_view.xml #generated:19
+-keep class android.support.v7.internal.widget.LinearLayoutICS { <init>(...); }
+
+# view v11\res/layout-v11/abc_action_bar_decor.xml #generated:17
+# view v11\res/layout-v11/abc_simple_decor.xml #generated:17
+-keep class android.support.v7.internal.widget.NativeActionModeAwareLayout { <init>(...); }
+
+# view res/layout/abc_action_bar_tab.xml #generated:17
+-keep class android.support.v7.internal.widget.ScrollingTabContainerView$TabView { <init>(...); }
+
+# view res/layout/abc_search_view.xml #generated:85
+-keep class android.support.v7.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# view AndroidManifest.xml #generated:526
+-keep class android.test.InstrumentationTestRunner { <init>(...); }
+
+# view AndroidManifest.xml #generated:463
+-keep class cn.jpush.android.service.AlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:418
+-keep class cn.jpush.android.service.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:442
+-keep class cn.jpush.android.service.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:429
+-keep class cn.jpush.android.service.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:406
+-keep class cn.jpush.android.ui.PushActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:512
+-keep class com.alipay.sdk.app.H5PayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.baidu.location.f { <init>(...); }
+
+# view res/layout/activity_geocoder.xml #generated:10
+# view res/layout/activity_personal_location.xml #generated:15
+-keep class com.baidu.mapapi.map.MapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:368
+-keep class com.tencent.connect.common.AssistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:391
+-keep class com.tencent.tauth.AuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:374
+-keep class net.dx.etutor.ReturnActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:137
+-keep class net.dx.etutor.activity.CardContralActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:141
+-keep class net.dx.etutor.activity.ImageShowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:132
+-keep class net.dx.etutor.activity.LocationCityActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class net.dx.etutor.activity.MainFragmentActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class net.dx.etutor.activity.NavigateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class net.dx.etutor.activity.WelcomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:112
+-keep class net.dx.etutor.activity.academy.AcademyListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:243
+-keep class net.dx.etutor.activity.academy.AgencyDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:117
+-keep class net.dx.etutor.activity.academy.CorrectionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:258
+-keep class net.dx.etutor.activity.academy.LocationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:253
+-keep class net.dx.etutor.activity.academy.SchoolDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:287
+-keep class net.dx.etutor.activity.comment.CommentDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:282
+-keep class net.dx.etutor.activity.comment.CommentListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:292
+-keep class net.dx.etutor.activity.comment.CommentWriteActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:312
+-keep class net.dx.etutor.activity.forum.ForumDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:222
+-keep class net.dx.etutor.activity.forum.ForumListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:322
+-keep class net.dx.etutor.activity.forum.ForumTopicListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:347
+-keep class net.dx.etutor.activity.forum.InformPostsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:352
+-keep class net.dx.etutor.activity.forum.InformPostsFristActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:317
+-keep class net.dx.etutor.activity.forum.MyPostsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:327
+-keep class net.dx.etutor.activity.forum.PostsDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:357
+-keep class net.dx.etutor.activity.forum.PostsListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:332
+-keep class net.dx.etutor.activity.forum.ReplyPostsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:342
+-keep class net.dx.etutor.activity.forum.SecondPostsListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:337
+-keep class net.dx.etutor.activity.forum.SendPostsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:151
+-keep class net.dx.etutor.activity.home.CollectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:176
+-keep class net.dx.etutor.activity.home.CopyOfLocationPersonalActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:171
+-keep class net.dx.etutor.activity.home.LocationPersonalActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:156
+-keep class net.dx.etutor.activity.home.MyUploadActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:161
+-keep class net.dx.etutor.activity.home.MyUploadPreviewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:166
+-keep class net.dx.etutor.activity.home.PersonalSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:362
+-keep class net.dx.etutor.activity.message.PrivateMessageDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:297
+-keep class net.dx.etutor.activity.order.OrderCreateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:307
+-keep class net.dx.etutor.activity.order.OrderDetailActivity { <init>(...); }
+
+# view res/layout/pay_main.xml #generated:28
+-keep class net.dx.etutor.activity.order.alipay.ExternalFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:376
+-keep class net.dx.etutor.activity.order.alipay.PayDemoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:272
+-keep class net.dx.etutor.activity.register.BindingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:146
+-keep class net.dx.etutor.activity.register.ForgetPasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:277
+-keep class net.dx.etutor.activity.register.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:262
+-keep class net.dx.etutor.activity.register.PerfectionInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:267
+-keep class net.dx.etutor.activity.register.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:238
+-keep class net.dx.etutor.activity.search.SearchAgencyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:248
+-keep class net.dx.etutor.activity.search.SearchSchoolActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:212
+-keep class net.dx.etutor.activity.search.SearchStudentNeedActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:192
+-keep class net.dx.etutor.activity.search.SearchTeacherActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:122
+-keep class net.dx.etutor.activity.setting.AboutOurActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:107
+-keep class net.dx.etutor.activity.setting.FeedbackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:127
+-keep class net.dx.etutor.activity.setting.HelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:96
+-keep class net.dx.etutor.activity.setting.RuleActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:181
+-keep class net.dx.etutor.activity.setting.SystemSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:186
+-keep class net.dx.etutor.activity.student.StudentIntroActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:202
+-keep class net.dx.etutor.activity.student.StudentNeedCreateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:197
+-keep class net.dx.etutor.activity.student.StudentNeedListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:207
+-keep class net.dx.etutor.activity.teacher.NeedStudentListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:227
+-keep class net.dx.etutor.activity.teacher.TeacherIntroActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:217
+-keep class net.dx.etutor.activity.teacher.TeacherListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:233
+-keep class net.dx.etutor.activity.teacher.TeacherSettingCourseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class net.dx.etutor.app.EtutorApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:466
+-keep class net.dx.etutor.receiver.OrderReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:487
+-keep class net.dx.etutor.receiver.ShutdownBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:480
+-keep class net.dx.etutor.receiver.StatisticReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:423
+-keep class net.dx.etutor.service.NoticeService { <init>(...); }
+
+# view res/layout/fragment_main_homepage.xml #generated:114
+-keep class net.dx.etutor.view.AutoTextView { <init>(...); }
+
+# view res/layout/dialog_invitation_code.xml #generated:31
+-keep class net.dx.etutor.view.MyEditText { <init>(...); }
+
+# view res/layout/activity_agency_detail.xml #generated:8
+# view res/layout/activity_correction.xml #generated:12
+# view res/layout/activity_create_student_need.xml #generated:11
+# view res/layout/activity_perfection_info.xml #generated:12
+# view res/layout/activity_posts_inform.xml #generated:10
+# view res/layout/activity_school_detail.xml #generated:8
+# view res/layout/activity_setting_personal_info.xml #generated:11
+# view res/layout/activity_student_introduce.xml #generated:19
+# view res/layout/activity_teacher_introduce.xml #generated:18
+# view res/layout/fragment_model_1to1.xml #generated:58
+# view res/layout/fragment_model_class.xml #generated:58
+-keep class net.dx.etutor.view.MyScrollView { <init>(...); }
+
+# view res/layout/activity_my_upload.xml #generated:15
+# view res/layout/activity_send_posts.xml #generated:59
+-keep class net.dx.etutor.view.MyUploadGridView { <init>(...); }
+
+# view res/layout/fragment_main_homepage.xml #generated:148
+# view res/layout/item_card_list.xml #generated:47
+# view res/layout/item_list.xml #generated:8
+-keep class net.dx.etutor.view.ScrollListView { <init>(...); }
+
+# view res/layout/wheel_dialog.xml #generated:7
+-keep class net.dx.etutor.view.WheelView { <init>(...); }
+
+# view res/layout/activity_posts_inform.xml #generated:81
+# view res/layout/activity_posts_inform.xml #generated:90
+# view res/layout/activity_posts_inform.xml #generated:99
+# view res/layout/item_first_posts.xml #generated:166
+# view res/layout/item_first_posts.xml #generated:176
+# view res/layout/item_first_posts.xml #generated:186
+# view res/layout/item_posts_relpy_list.xml #generated:113
+# view res/layout/item_posts_relpy_list.xml #generated:120
+# view res/layout/item_posts_relpy_list.xml #generated:129
+-keep class net.dx.etutor.view.imageview.ClickImageView { <init>(...); }
+
+# view res/layout/activity_posts_inform.xml #generated:29
+# view res/layout/activity_student_introduce.xml #generated:42
+# view res/layout/activity_teacher_introduce.xml #generated:41
+# view res/layout/item_agency.xml #generated:16
+# view res/layout/item_collect_student.xml #generated:10
+# view res/layout/item_collect_teacher.xml #generated:11
+# view res/layout/item_first_posts.xml #generated:15
+# view res/layout/item_receive_message.xml #generated:119
+# view res/layout/item_send_message.xml #generated:111
+# view res/layout/item_student_need.xml #generated:25
+# view res/layout/item_user_message.xml #generated:14
+-keep class net.dx.etutor.view.imageview.RoundHeadImageView { <init>(...); }
+
+# view res/layout/activity_comment.xml #generated:16
+# view res/layout/activity_setting_personal_info.xml #generated:29
+# view res/layout/fragment_main_personal.xml #generated:46
+# view res/layout/item_comment.xml #generated:53
+# view res/layout/item_comment_sample.xml #generated:7
+# view res/layout/item_my_posts.xml #generated:124
+# view res/layout/item_posts_relpy_list.xml #generated:8
+# view res/layout/item_receive_message.xml #generated:8
+# view res/layout/item_send_message.xml #generated:8
+-keep class net.dx.etutor.view.imageview.RoundImageView { <init>(...); }
+
+# view res/layout/activity_card_list.xml #generated:20
+-keep class net.dx.etutor.view.listview.DragListView { <init>(...); }
+
+# view res/layout/activity_student_need_list.xml #generated:24
+-keep class net.dx.etutor.view.listview.OwnNeedExpandableListView { <init>(...); }
+
+# view res/layout/activity_more_comment_list.xml #generated:12
+# view res/layout/activity_upload_list.xml #generated:14
+-keep class net.dx.etutor.view.listview.PullToRefreshView { <init>(...); }
+
+# view res/layout/activity_system_message_list.xml #generated:24
+# view res/layout/fragment_posts_join_list.xml #generated:34
+-keep class net.dx.etutor.view.listview.XListView { <init>(...); }
+
+# view res/layout/activity_collect.xml #generated:38
+# view res/layout/activity_comment_list.xml #generated:23
+# view res/layout/activity_forumlist_layout.xml #generated:142
+# view res/layout/activity_message_detail.xml #generated:16
+# view res/layout/activity_need_student_list.xml #generated:38
+# view res/layout/activity_posts_detail_list.xml #generated:11
+# view res/layout/activity_posts_reply_list.xml #generated:10
+# view res/layout/activity_private_message_list.xml #generated:24
+# view res/layout/activity_teacher_list.xml #generated:33
+# view res/layout/fragment_agency_list.xml #generated:26
+# view res/layout/fragment_forum_layout.xml #generated:17
+# view res/layout/fragment_forum_list.xml #generated:51
+# view res/layout/fragment_main_message.xml #generated:7
+# view res/layout/fragment_posts_collect_list.xml #generated:35
+# view res/layout/fragment_posts_issue_list.xml #generated:35
+# view res/layout/fragment_school_list.xml #generated:27
+-keep class net.dx.etutor.view.pulltorefresh.PullToRefreshListView { <init>(...); }
+
+# view res/layout/fragment_main_homepage.xml #generated:13
+# view res/layout/fragment_main_personal.xml #generated:12
+-keep class net.dx.etutor.view.pulltorefresh.PullToRefreshScrollView { <init>(...); }
+
+# view res/layout/wheel_dialog_layout.xml #generated:41
+# view res/layout/wheel_dialog_subject_layout.xml #generated:41
+# view res/layout/wheel_dialog_subject_layout.xml #generated:49
+-keep class net.dx.etutor.view.wheelview.WheelView { <init>(...); }
+
+# view AndroidManifest.xml #generated:381
+-keep class net.dx.etutor.wxapi.WXEntryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:386
+-keep class net.dx.etutor.wxapi.WXPayEntryActivity { <init>(...); }
+
+# onClick res/layout/activity_login.xml #generated:107
+# onClick res/layout/activity_login.xml #generated:80
+# onClick res/layout/activity_login.xml #generated:93
+-keepclassmembers class * { *** onClick(...); }
+
+# onClick res/layout/activity_teacher_list.xml #generated:55
+-keepclassmembers class * { *** onRelease(...); }
+
+# onClick res/layout/activity_need_student_list.xml #generated:58
+-keepclassmembers class * { *** onReleaseCourse(...); }
+
+# onClick res/layout/pay_external.xml #generated:86
+-keepclassmembers class * { *** pay(...); }
+

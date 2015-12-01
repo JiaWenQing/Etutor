@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text_white"
+    android:orientation="horizontal" >
+
+    <net.dx.etutor.view.imageview.RoundImageView
+        android:id="@+id/imv_poster_avatar"
+        android:layout_width="@dimen/margin_40"
+        android:layout_height="@dimen/margin_40"
+        android:layout_gravity="top"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@drawable/default_avatar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_poster_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_is_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:background="@drawable/icon_posts_landlord"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_posts_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10"
+                android:clickable="true"
+                android:drawableRight="@drawable/icon_posts_more_menu_normal"
+                android:textColor="@color/text_blue" />
+
+            <RadioButton
+                android:id="@+id/rb_isbelaud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10"
+                android:button="@color/text_black"
+                android:drawableLeft="@drawable/selector_menu_posts_praise_small"
+                android:drawablePadding="@dimen/margin_5"
+                android:gravity="center"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第 2 楼"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:maxLength="19"
+                android:text="@string/text_assess_time"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="start"
+            android:lineSpacingExtra="@dimen/margin_3"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:textColor="@color/text_login_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <LinearLayout
+            android:id="@+id/img_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <net.dx.etutor.view.imageview.ClickImageView
+                android:id="@+id/img_1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_80"
+                android:clickable="true"
+                android:visibility="gone" />
+
+            <net.dx.etutor.view.imageview.ClickImageView
+                android:id="@+id/img_1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_80"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:clickable="true"
+                android:visibility="gone" />
+
+            <net.dx.etutor.view.imageview.ClickImageView
+                android:id="@+id/img_1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_80"
+                android:clickable="true"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_reply_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_posts_send_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="A教师"
+                        android:textColor="@color/text_blue"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_is_poster_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/margin_15"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:background="@drawable/icon_posts_landlord"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_posts_receive_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:gravity="center"
+                        android:hint="回复 B教师 :"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_posts_content_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dsafdsadsadsadsads"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_reply_time_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="right|center_vertical"
+                        android:maxLength="19"
+                        android:text="@string/text_assess_time"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_inform_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="@string/text_inform"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_reply_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_posts_send_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="A教师"
+                        android:textColor="@color/text_blue"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_is_poster_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/margin_15"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:background="@drawable/icon_posts_landlord"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_posts_receive_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:gravity="center"
+                        android:hint="回复 B教师 :"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_posts_content_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dsafdsadsadsadsads"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/text_size_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_reply_time_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="right|center_vertical"
+                        android:maxLength="19"
+                        android:text="@string/text_assess_time"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_inform_2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/text_inform"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_look_more_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:clickable="true"
+            android:text="@string/text_look_reply"
+            android:textColor="@color/text_blue"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

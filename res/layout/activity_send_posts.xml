@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head_bar" />
+
+    <EditText
+        android:id="@+id/et_topic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:background="@null"
+        android:drawablePadding="@dimen/margin_5"
+        android:gravity="center_vertical"
+        android:hint="@string/text_topic_title"
+        android:minHeight="@dimen/height_44"
+        android:singleLine="true"
+        android:maxLength="15"
+        android:textColor="@color/text_login_color"
+        android:textColorHint="@color/text_login_color"
+        android:textSize="@dimen/text_size_14" />
+
+    <ImageView
+        android:id="@+id/split_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/line" />
+
+    <EditText
+        android:id="@+id/et_topic_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@null"
+        android:drawablePadding="@dimen/margin_5"
+        android:gravity="start"
+        android:hint="@string/text_topic_content"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="@dimen/margin_3"
+        android:minHeight="@dimen/height_180"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:textColor="@color/text_login_color"
+        android:textColorHint="@color/text_login_color"
+        android:textSize="@dimen/text_size_14" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+    <net.dx.etutor.view.MyUploadGridView
+        android:id="@+id/my_upload_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:scrollbars="none" >
+    </net.dx.etutor.view.MyUploadGridView>
+
+</LinearLayout>

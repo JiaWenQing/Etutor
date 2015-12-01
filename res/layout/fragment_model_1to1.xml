@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_model_1to1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible" >
+
+   <LinearLayout
+        android:id="@+id/layout_shield1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_10"
+        android:background="@color/text_white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_20"
+            android:text="@string/text_isShield"
+            android:textSize="@dimen/text_size_14" />
+
+        <RadioGroup
+            android:id="@+id/rg_shield1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_shield1_y"
+                android:layout_width="@dimen/width_80"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="@dimen/margin_3"
+                android:button="@drawable/selector_button_redio"
+                android:gravity="center"
+                android:text="@string/text_shield"
+                android:textSize="@dimen/text_size_14" />
+
+            <RadioButton
+                android:id="@+id/rb_shield1_n"
+                android:layout_width="@dimen/width_80"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="@dimen/margin_3"
+                android:button="@drawable/selector_button_redio"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/text_shield_not"
+                android:textSize="@dimen/text_size_14" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <net.dx.etutor.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_shield1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_view_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:text="@string/text_subject"
+                android:textSize="@dimen/text_size_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvbtn_subject1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg_normal"
+                    android:drawableRight="@drawable/search_teacher_filter_arrow"
+                    android:gravity="center"
+                    android:hint="@string/text_choose_subject"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_10" />
+
+                <TextView
+                    android:id="@+id/tvbtn_subject2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg_normal"
+                    android:drawableRight="@drawable/search_teacher_filter_arrow"
+                    android:gravity="center"
+                    android:hint="@string/text_choose_subject"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_10" />
+
+                <TextView
+                    android:id="@+id/tvbtn_subject3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg_normal"
+                    android:drawableRight="@drawable/search_teacher_filter_arrow"
+                    android:gravity="center"
+                    android:hint="@string/text_choose_subject"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_10" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:text="@string/text_class_fees1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/et_class_fees"
+                    android:layout_width="@dimen/width_100"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/number_enter_text_bg"
+                    android:gravity="center"
+                    android:hint="@string/text_class_fees2"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:gravity="center"
+                    android:text="@string/text_class_fees_unit" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:text="@string/text_lecture_mode1"
+                android:textSize="@dimen/text_size_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvbtn_lecture_mode1"
+                    android:layout_width="@dimen/width_100"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_bg_normal"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/search_teacher_filter_arrow"
+                    android:gravity="center"
+                    android:hint="@string/text_lecture_mode1"
+                    android:singleLine="true"
+                    android:text="@string/text_mode_1"
+                    android:textSize="@dimen/text_size_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:text="@string/text_lecture_time" />
+
+                <include layout="@layout/course_table_gray_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="@string/text_introduce" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_120"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5" >
+
+                <EditText
+                    android:id="@+id/et_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_bg_normal"
+                    android:gravity="top"
+                    android:hint="@string/text_write_introduce"
+                    android:inputType="textMultiLine"
+                    android:maxLength="100"
+                    android:maxLines="5"
+                    android:scrollHorizontally="false"
+                    android:singleLine="false"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_intro_surplus_number1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@dimen/margin_5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:text="100"
+                    android:textSize="@dimen/text_size_14" />
+            </RelativeLayout>
+        </LinearLayout>
+    </net.dx.etutor.view.MyScrollView>
+
+    <ImageView
+        android:id="@+id/imv_shield1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_shield1"
+        android:background="@color/bg_shield"
+        android:visibility="gone" />
+
+</RelativeLayout>

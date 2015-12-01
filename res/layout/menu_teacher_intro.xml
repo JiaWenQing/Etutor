@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_50"
+    android:layout_marginTop="@dimen/margin_10"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg_mode_choose"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@color/gray_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_create_order"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_button_register"
+            android:button="@color/text_black"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/menu_create_order"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_14" />
+
+        <RadioButton
+            android:id="@+id/rb_dial"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_button_register"
+            android:button="@color/text_black"
+            android:drawableLeft="@drawable/menu_phone"
+            android:gravity="center"
+            android:text="@string/menu_dial"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_14" />
+
+        <RadioButton
+            android:id="@+id/rb_private_lettle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_button_register"
+            android:button="@color/text_white"
+            android:drawableLeft="@drawable/icon_menu_message"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/menu_private_lettle"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_14" />
+    </RadioGroup>
+
+</LinearLayout>

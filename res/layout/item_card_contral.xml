@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_44"
+    android:layout_gravity="center"
+    android:minHeight="@dimen/height_44" >
+
+    <ImageButton
+        android:id="@+id/tv_card_move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/margin_20"
+        android:src="@drawable/drag"
+        android:background="@null"
+        android:clickable="true"
+        android:gravity="center" />
+
+
+    <TextView
+        android:id="@+id/tv_card_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/ok"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:drawablePadding="@dimen/margin_10"
+        android:clickable="true"
+        android:text="我的收藏" />
+
+</RelativeLayout>
